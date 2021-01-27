@@ -11,6 +11,7 @@ from ._mariadb import (
     BINARY,
     Binary,
     connection,
+    cursor,
     ConnectionPool,
     DATETIME,
     DataError,

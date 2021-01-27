@@ -264,6 +264,9 @@ PyMODINIT_FUNC PyInit__mariadb(void)
     Py_INCREF(&MrdbConnection_Type);
     PyModule_AddObject(module, "connection", (PyObject *)&MrdbConnection_Type);
 
+	Py_INCREF(&MrdbCursor_Type);
+	PyModule_AddObject(module, "cursor", (PyObject *)&MrdbCursor_Type);
+
     cnx_pool= PyDict_New();
     Py_INCREF(&MrdbPool_Type);
     PyModule_AddObject(module, "ConnectionPool", (PyObject *)&MrdbPool_Type);
