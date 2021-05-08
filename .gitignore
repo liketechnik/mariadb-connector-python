@@ -43,3 +43,6 @@ RelWithDebInfo
 
 #vim backups
 *.*~
+
+# python venv
+venv/
